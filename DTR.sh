@@ -23,4 +23,3 @@ rm -f cnip_2.txt
 rm -f cnip_add.txt
 rm -f cnip_del.txt
 rm -f CIDR.sh
-rm -f DTR.sh
