@@ -89,3 +89,4 @@ do
   fi
 done
 cidr "$(long2IP $start1)~$(long2IP $end1)"
+
