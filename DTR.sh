@@ -11,6 +11,14 @@ chmod +x CIDR.sh
 ./CIDR.sh < cnip_1.txt > cnip_2.txt
 #转换路由命令表
 #每行前加
-sed "s/^/add &/g" cnip_2.txt > cnip_3.txt
+sed "s/^/add &/g" cnip_2.txt > cnip_add.txt
+sed "s/^/delete &/g" cnip_2.txt > cnip_del.txt
 #每行后加
-sed "s/$/& default METRIC default IF default/g" cnip_2.txt > add.txt
+sed "s/$/& default METRIC default IF default/g" cnip_add.txt > add.txt
+sed "s/$/& default METRIC default IF default/g" cnip_del.txt > del.txt
+#删除文件
+rm -f cnip_0.txt
+rm -f cnip_1.txt
+rm -f cnip_2.txt
+rm -f cnip_add.txt
+rm -f cnip_del.txt
