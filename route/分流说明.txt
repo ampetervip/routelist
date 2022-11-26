@@ -1,0 +1,2 @@
+PreUp = start X:\...\routes-up.bat
+PostDown = start X:\...\routes-down.bat
