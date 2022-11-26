@@ -1,4 +1,3 @@
-
 #!/bin/bash
 function IP2long(){
   local IFS='.'
